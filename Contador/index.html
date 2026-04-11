@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <section class="botao-topo">
+                <h2 id="soma_geral">Total: 0</h2>
+                <button class="reset" onclick="resetar()">↻</button>
+            </section>
+            <section>
+                <h2>Homens</h2>
+                <img class="icone" src="homem.png" alt="icone">
+                <div class="botoes">
+                    <button class="mais" onclick="somarHomem()">+</button>
+                    <button class="menos" onclick="removeHomem()">-</button>
+                </div>
+                <h2 id="resultado_homem">Total: 0</h2>
+            </section>
+            <section>
+                <h2>Mulheres</h2>
+                <img class="icone" src="salao.png" alt="icone">
+                <div class="botoes">
+                    <button class="mais" onclick="somaMulher()">+</button>
+                    <button class="menos" onclick="removeMulher()">-</button>
+                </div>
+                <h2 id="resultado_mulher">Total: 0</h2>
+            </section>
+        </nav>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
