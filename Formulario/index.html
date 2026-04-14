@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Formulário de Cadastro:</h1>
+        <form id="cadastroForm">
+            <section class="row">
+                <section class="col">
+                    <label>Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                    <span id="erro-nome" class="error-msg">Nome deve conter nome e sobrenome</span>
+                </section>
+            </section>
+            <section class="row">
+                <section class="col">
+                    <label>Email:</label>
+                    <input type="text" id="email" placeholder="fulano.com">
+                    <span id="erro-email" class="error-msg">Email inválido</span>
+                </section>
+                <section class="col">
+                    <label>Data Nascimento:</label>
+                    <section class="date-input-wrapper">
+                        <input type="text" id="data" placeholder="dd/mm/aaaa" maxlength="10">
+                        <span class="date-icon">📅</span>
+                    </section>
+                    <span id="erro-data" class="error-msg">Data inválida</span>
+                </section>
+            </section>
+            <section class="row">
+                <section class="col">
+                    <label>Telefone Fixo:</label>
+                    <input type="text" id="telFixo" placeholder="(99)9999-9999">
+                    <span id="erro-telFixo" class="error-msg">Telefone inválido</span>
+                </section>
+                <section class="col">
+                    <label>Telefone Celular:</label>
+                    <input type="text" id="telCelular" placeholder="(99)99999-9999">
+                    <span id="erro-telCelular" class="error-msg">Telefone inválido</span>
+                </section>
+                <section class="col-small">
+                    <label></label>
+                    <section class="radio-group">
+                        <label><input type="radio" name="perfil" value="Professor" id="radioProf" checked> Professor</label>
+                        <label><input type="radio" name="perfil" value="Aluno" id="radioAluno"> Aluno</label>
+                    </section>
+                </section>
+            </section>
+            <section class="row">
+                <section class="col" id="group-area">
+                    <label>Área:</label>
+                    <input type="text" id="area" placeholder="Digite sua área de atuação">
+                    <span id="erro-area" class="error-msg">Campo obrigatório</span>
+                </section>
+                <section class="col" id="group-curso" style="display:none;">
+                    <label>Curso:</label>
+                    <input type="text" id="curso" placeholder="Digite seu curso">
+                    <span id="erro-curso" class="error-msg">Campo obrigatório</span>
+                </section>
+                <section class="col">
+                    <label>Matrícula:</label>
+                    <input type="text" id="matricula">
+                    <span id="erro-matricula" class="error-msg">Matrícula inválida</span>
+                </section>
+            </section>
+            <section class="row" id="row-lattes">
+                <section class="col">
+                    <label>Lattes:</label>
+                    <input type="text" id="lattes">
+                    <span id="erro-lattes" class="error-msg">Campo obrigatório</span>
+                </section>
+            </section>
+            <section class="actions">
+                <button type="submit">Enviar</button>
+                <button type="reset" id="btnReset">Redefinir</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
